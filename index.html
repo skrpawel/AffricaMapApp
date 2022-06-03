@@ -11,6 +11,27 @@
 
 <body>
     <div id="content">
+        <div id="legend">
+            <h3>LEGEND</h3>
+            <br>
+            <p id="fir_pop">0-0100000</p>
+            <br>
+            <p id="sec_pop">0100000 - 100000</p>
+            <br>
+            <p id="thr_pop">0100000 - 100000</p>
+            <br>
+            <p id="four_pop">0100000 - 100000</p>
+            <br>
+            <p id="fif_pop">0100000 - 100000</p>
+            <br>
+            <p id="six_pop">0100000 - 100000</p>
+            <br>
+            <p id="seven_pop">0100000 - 100000</p>
+            <br>
+            <p id="eight_pop">0100000 - 100000</p>
+            <br>
+            <p id="nine_pop">0100000 - 100000</p>
+        </div>
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
             xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -202,12 +223,21 @@
                 <li>POPULATION: <span id="population"></span></li>
                 <li>REGION: <span id="region"></span></li>
             </ul>
+            <h1>FILTER</h1>
+            <form>
+                <label>Countries with population over: </label>
+                <input name="population_number_input" id="population_number_input" type="range" min="0" max="206140000"
+                    value="0" step="10000">
+
+                <h3 id="population_value">0</h3>
+            </form>
+
         </div>
     </div>
     <footer>
-        CREATED BY PAWEL SKROBSKI
+        CREATED BY <a>PAWEL SKROBSKI</a>
     </footer>
 </body>
-<script src="main.js"></script>
+<script src=" main.js"></script>
 
 </html>
