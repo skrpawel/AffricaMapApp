@@ -28,9 +28,13 @@ body {
     justify-content: space-around;
 }
 
+#svg2{
+    min-width: 200px;
+}
+
 #box {
     border: 2px solid black;
-    min-width: 400px;
+    min-width: 200px;
     max-width: 400px;
     max-height: 500px;
     background: rgba(223, 206, 174, .8);
@@ -68,16 +72,57 @@ footer {
     text-align: center;
 }
 
+footer a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
 svg path {
     width: 50%;
     height: 50%;
     stroke-width: 0.5;
 }
 
-
 svg path:hover {
     fill: green !important;
 }
 
+#legend {
+    background: rgba(223, 206, 174, .8);
+    padding: 2em;
+    border: 2px solid black;
+}
 
+#fir_pop {
+    background: #FFF7BC;
+}
+
+#sec_pop {
+    background: #FEE391;
+}
+
+#thr_pop {
+    background: #FEC44F;
+}
+
+#four_pop {
+    background: #FE9929;
+}
+#fif_pop {
+    background: #EC7014;
+}
+#six_pop {
+    background: #CC4C02;
+}
+#seven_pop {
+    background: #993404;
+}
+
+#eight_pop {
+    background: #662506;
+}
+
+#nine_pop {
+    background: #3a1200;
+}
 
