@@ -12,25 +12,34 @@
 <body>
     <div id="content">
         <div id="legend">
-            <h3>LEGEND</h3>
+            <h1>LEGEND</h1>
             <br>
-            <p id="fir_pop">0-0100000</p>
+            <p id="fir_pop" class="pop_box">0 - 25000000</p>
             <br>
-            <p id="sec_pop">0100000 - 100000</p>
+            <p id="sec_pop" class="pop_box">25000001 - 50000000</p>
             <br>
-            <p id="thr_pop">0100000 - 100000</p>
+            <p id="thr_pop" class="pop_box">50000001 - 75000000</p>
             <br>
-            <p id="four_pop">0100000 - 100000</p>
+            <p id="four_pop" class="pop_box">75000001 - 100000000</p>
             <br>
-            <p id="fif_pop">0100000 - 100000</p>
+            <p id="fif_pop" class="pop_box">100000001 - 125000000</p>
             <br>
-            <p id="six_pop">0100000 - 100000</p>
+            <p id="six_pop" class="pop_box white">125000001 - 150000000</p>
             <br>
-            <p id="seven_pop">0100000 - 100000</p>
+            <p id="seven_pop" class="pop_box white">150000001 - 175000000</p>
             <br>
-            <p id="eight_pop">0100000 - 100000</p>
+            <p id="eight_pop" class="pop_box white">175000001 - 200000000</p>
             <br>
-            <p id="nine_pop">0100000 - 100000</p>
+            <p id="nine_pop" class="pop_box white">200000001 - 225000000</p>
+        </div>
+        <div class="tooltip" id="tooltip">
+            <ul>
+
+                <li>COUNTRY NAME: <span id="country_name"></span></li>
+                <li>CAPITAL CITY: <span id="capital_city"></span></li>
+                <li>POPULATION: <span id="population"></span></li>
+                <li>REGION: <span id="region"></span></li>
+            </ul>
         </div>
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
@@ -216,20 +225,13 @@
                 style="fill:#f2f2f2" />
         </svg>
         <div id="box">
-            <ul>
-                <h1>INFORMATIONS</h1>
-                <li>COUNTRY NAME: <span id="country_name"></span></li>
-                <li>CAPITAL CITY: <span id="capital_city"></span></li>
-                <li>POPULATION: <span id="population"></span></li>
-                <li>REGION: <span id="region"></span></li>
-            </ul>
             <h1>FILTER</h1>
             <form>
                 <label>Countries with population over: </label>
                 <input name="population_number_input" id="population_number_input" type="range" min="0" max="206140000"
-                    value="0" step="10000">
+                    value="206140000" step="10000">
 
-                <h3 id="population_value">0</h3>
+                <h3 id="population_value">206140000</h3>
             </form>
 
         </div>
