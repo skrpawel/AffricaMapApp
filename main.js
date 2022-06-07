@@ -8,6 +8,7 @@ const COUNTRY_ID = document.getElementById("svg2");
 const FILTER = document.getElementById("filter");
 const POPULATION_INPUT = document.getElementById("population_number_input");
 const POPULATION_H3 = document.getElementById("population_value");
+const TOOLTIP = document.getElementById("tooltip");
 
 
 let COUNTRY_DATA;
@@ -18,12 +19,23 @@ API_CALL2('https://restcountries.com/v3.1/subregion/africa');
 
 const getCountryID = COUNTRY_ID.addEventListener("mouseover", function (event) {
     if (event.target.id !== 'svg2') {
-        console.log('elo')
+        let topElementPosition = event.target.getBoundingClientRect().top;
+        let leftElementPosition = event.target.getBoundingClientRect().left;
+        TOOLTIP.style.top = +topElementPosition - 150 + 'px';
+        TOOLTIP.style.left = +leftElementPosition + 120 + 'px';
+        TOOLTIP.style.display = 'block';
         return API_CALL(API_URL + event.target.id);
     }
 
     return null;
 }, false);
+
+COUNTRY_ID.addEventListener('mouseout', function (event) {
+    TOOLTIP.style.bottom = '0px';
+    TOOLTIP.style.display = 'none';
+
+    console.log(event.target.id);
+});
 
 
 
