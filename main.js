@@ -18,6 +18,7 @@ API_CALL2('https://restcountries.com/v3.1/subregion/africa');
 
 const getCountryID = COUNTRY_ID.addEventListener("mouseover", function (event) {
     if (event.target.id !== 'svg2') {
+        console.log('elo')
         return API_CALL(API_URL + event.target.id);
     }
 
@@ -34,7 +35,6 @@ function API_CALL(url) {
             CAPITAL.textContent = data[0].capital[0];
             POPULATION.textContent = data[0].population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
             REGION.textContent = data[0].subregion;
-            console.log(data[0].maps.googleMaps)
             return data[0];
         })
 }
@@ -63,57 +63,50 @@ function showColor() {
             continue;
         }
 
-        if (element.population < 22904444) {
+        if (element.population < 25000000) {
             document.getElementById(code).style.fill = '#FFF7BC';
             continue;
         }
 
-        if (element.population < (22904444 * 2)) {
+        if (element.population < (25000000 * 2)) {
             document.getElementById(code).style.fill = '#FEE391';
             continue;
         }
 
-        if (element.population < (22904444 * 3)) {
+        if (element.population < (25000000 * 3)) {
             document.getElementById(code).style.fill = '#FEC44F';
             continue;
         }
 
-        if (element.population < (22904444 * 4)) {
+        if (element.population < (25000000 * 4)) {
             document.getElementById(code).style.fill = '#FE9929';
             continue;
         }
 
-        if (element.population < (22904444 * 5)) {
+        if (element.population < (25000000 * 5)) {
             document.getElementById(code).style.fill = '#EC7014';
             continue;
         }
 
-        if (element.population < (22904444 * 6)) {
+        if (element.population < (25000000 * 6)) {
             document.getElementById(code).style.fill = '#CC4C02';
             continue;
         }
 
-        if (element.population < (22904444 * 7)) {
+        if (element.population < (25000000 * 7)) {
             document.getElementById(code).style.fill = '#993404';
             continue;
         }
 
-        if (element.population < (22904444 * 8)) {
+        if (element.population < (25000000 * 8)) {
             document.getElementById(code).style.fill = '#662506';
             continue;
         }
 
-        if (element.population < (22904444 * 9)) {
+        if (element.population < (25000000 * 9)) {
             document.getElementById(code).style.fill = '#3a1200';
             continue;
         }
-
-
-
-        // document.getElementById(code).style.fill = `url(${element.flags.png})`;
-
-
-
     }
 
 }
@@ -137,47 +130,47 @@ function filterMap() {
             continue;
         }
 
-        if (element.population < 22904444) {
+        if (element.population < 25000000 || POPULATION_H3.textContent == '0') {
             document.getElementById(code).style.fill = '#FFF7BC';
             continue;
         }
 
-        if (element.population < (22904444 * 2)) {
+        if (element.population < (25000000 * 2)) {
             document.getElementById(code).style.fill = '#FEE391';
             continue;
         }
 
-        if (element.population < (22904444 * 3)) {
+        if (element.population < (25000000 * 3)) {
             document.getElementById(code).style.fill = '#FEC44F';
             continue;
         }
 
-        if (element.population < (22904444 * 4)) {
+        if (element.population < (25000000 * 4)) {
             document.getElementById(code).style.fill = '#FE9929';
             continue;
         }
 
-        if (element.population < (22904444 * 5)) {
+        if (element.population < (25000000 * 5)) {
             document.getElementById(code).style.fill = '#EC7014';
             continue;
         }
 
-        if (element.population < (22904444 * 6)) {
+        if (element.population < (25000000 * 6)) {
             document.getElementById(code).style.fill = '#CC4C02';
             continue;
         }
 
-        if (element.population < (22904444 * 7)) {
+        if (element.population < (25000000 * 7)) {
             document.getElementById(code).style.fill = '#993404';
             continue;
         }
 
-        if (element.population < (22904444 * 8)) {
+        if (element.population < (25000000 * 8)) {
             document.getElementById(code).style.fill = '#662506';
             continue;
         }
 
-        if (element.population < (22904444 * 9)) {
+        if (element.population < (25000000 * 9)) {
             document.getElementById(code).style.fill = '#3a1200';
             continue;
         }

@@ -12,25 +12,25 @@
 <body>
     <div id="content">
         <div id="legend">
-            <h3>LEGEND</h3>
+            <h1>LEGEND</h1>
             <br>
-            <p id="fir_pop">0-0100000</p>
+            <p id="fir_pop" class="pop_box">0 - 25000000</p>
             <br>
-            <p id="sec_pop">0100000 - 100000</p>
+            <p id="sec_pop" class="pop_box">25000001 - 50000000</p>
             <br>
-            <p id="thr_pop">0100000 - 100000</p>
+            <p id="thr_pop" class="pop_box">50000001 - 75000000</p>
             <br>
-            <p id="four_pop">0100000 - 100000</p>
+            <p id="four_pop" class="pop_box">75000001 - 100000000</p>
             <br>
-            <p id="fif_pop">0100000 - 100000</p>
+            <p id="fif_pop" class="pop_box">100000001 - 125000000</p>
             <br>
-            <p id="six_pop">0100000 - 100000</p>
+            <p id="six_pop" class="pop_box white">125000001 - 150000000</p>
             <br>
-            <p id="seven_pop">0100000 - 100000</p>
+            <p id="seven_pop" class="pop_box white">150000001 - 175000000</p>
             <br>
-            <p id="eight_pop">0100000 - 100000</p>
+            <p id="eight_pop" class="pop_box white">175000001 - 200000000</p>
             <br>
-            <p id="nine_pop">0100000 - 100000</p>
+            <p id="nine_pop" class="pop_box white">200000001 - 225000000</p>
         </div>
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@
                     </cc:Work>
                 </rdf:RDF>
             </metadata>
-            <path inkscape:connector-curvature="0" id="AO" data-name="Angola" data-id="AO"
+            <path inkscape:connector-curvature="0" id="AO" data-name="Angola" data-id="AO" class="tooltip"
                 d="m 495.3,598.6 -36,-0.2 -4.3,1.7 -3.5,-0.3 -5.1,1.9 -1.1,2.7 6,8.7 2.4,9.3 3.6,13.4 -3.8,5.5 -0.6,2.8 2.9,8.3 3.1,8.4 3.6,5 0.6,7.8 -1.4,10.3 -4,6.1 -7.1,9.1 -2.9,5.6 -4.1,12.5 -0.8,5.9 -4.3,12.7 -1.9,12.2 1,8.7 5.9,-2.7 7.2,-2.3 7.8,0.4 7.1,6.3 1.9,-1 48.8,-0.6 8.2,6.6 29.1,2 22.4,-5.7 -7.6,-8.6 -7.8,-11.3 1.6,-44 25.3,0.1 -1,-4.7 2,-5.2 -2,-6.5 1.5,-6.7 -1.2,-4.3 -5.5,-0.8 -7.6,2 -5.3,-0.3 -3,1.3 0.9,-16.5 -3.9,-5.1 -0.8,-8.5 1.9,-8.4 -2.4,-5.3 -0.1,-8.7 -14.8,0.1 1.1,-5 -6.2,0.1 -0.7,2.4 -7.6,0.5 -3.1,8.1 -1.9,3.4 -6.7,-1.9 -4,1.9 -8.1,1.1 -4.6,-7.2 -2.7,-4.5 -3.5,-8.3 -2.9,-10.3 z m -47.4,-2.7 0.4,-6 2,-3.5 4.5,-2.9 -4.6,-4.8 -3.7,2.3 -5,6 3.3,10.4 3.1,-1.5 z"
                 style="fill:#f2f2f2" />
             <path inkscape:connector-curvature="0" id="BI" data-name="Burundi" data-id="BI"
@@ -227,9 +227,9 @@
             <form>
                 <label>Countries with population over: </label>
                 <input name="population_number_input" id="population_number_input" type="range" min="0" max="206140000"
-                    value="0" step="10000">
+                    value="206140000" step="10000">
 
-                <h3 id="population_value">0</h3>
+                <h3 id="population_value">206140000</h3>
             </form>
 
         </div>
